@@ -8,6 +8,13 @@ const Todo = ({ todo, dispatch }) => {
     });
   };
 
+  const clearRemove = () => {
+    dispatch({
+      type: "REMOVE_TODO",
+      payload: todo.id
+    });
+  };
+
   console.log(`this is props`, todo);
 
   return (
@@ -17,8 +24,8 @@ const Todo = ({ todo, dispatch }) => {
         onClick={toggleCompleted}
       >
         <p className="item-todo">{todo.item}</p>
-        <button>Clear</button>
       </div>
+      <button onClick={clearRemove}>Clear</button>
     </div>
   );
 };

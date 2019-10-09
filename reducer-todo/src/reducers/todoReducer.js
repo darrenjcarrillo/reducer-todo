@@ -15,13 +15,16 @@ export const reducer = (state, action) => {
       ];
     case "TOGGLE_EDIT":
       return state.map(todo => {
-        console.log(action.payload);
+        console.log(`this is action payload`, action.payload);
         if (todo.id === action.payload) {
           return { ...todo, completed: !todo.completed };
         } else {
           return todo;
         }
       });
+
+    case "REMOVE_TODO":
+      return state.filter(todo => todo.id !== action.payload);
 
     default:
       return state;
