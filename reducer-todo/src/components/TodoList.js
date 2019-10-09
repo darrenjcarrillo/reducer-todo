@@ -10,10 +10,11 @@ const TodoList = () => {
   return (
     <div className="todo-list">
       <TodoForm dispatch={dispatch} />
-
-      {list.map(todo => (
-        <Todo key={todo.id} todo={todo} dispatch={dispatch} />
-      ))}
+      <div className="main-todo-container">
+        {list.map(todo => (
+          <Todo key={todo.id} todo={todo} dispatch={dispatch} />
+        ))}
+      </div>
     </div>
   );
 };

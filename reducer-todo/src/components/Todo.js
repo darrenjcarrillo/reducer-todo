@@ -18,7 +18,7 @@ const Todo = ({ todo, dispatch }) => {
   console.log(`this is props`, todo);
 
   return (
-    <div>
+    <div className="todo-container">
       <div
         className={`item${todo.completed ? " completed" : ""}`}
         onClick={toggleCompleted}

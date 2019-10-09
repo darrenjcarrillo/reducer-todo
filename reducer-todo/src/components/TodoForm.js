@@ -19,11 +19,10 @@ const TodoForm = ({ dispatch }) => {
 
   return (
     <div>
+      <h1>Todo List</h1>
       <form onSubmit={submitTodo}>
-        <label>Todo</label>
         <input name="todo" value={item} onChange={handleChanges} />
         <button>Add Todo</button>
-        <button type="submit">Clear</button>
       </form>
     </div>
   );
