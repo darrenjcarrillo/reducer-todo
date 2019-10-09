@@ -1,0 +1,79 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #09d3ac;
+}
+
+.main-todo-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+.item {
+  display: flex;
+  justify-content: center;
+  background-color: #e64944;
+  width: 90%;
+  border-radius: 10px;
+  text-align: left;
+  margin: 1rem auto;
+  padding-left: 8px;
+  height: 2rem;
+  color: #fff;
+}
+
+.item.completed {
+  background-color: #d17d7c;
+  text-decoration: line-through;
+}
+
+.item-todo {
+  display: flex;
+  align-items: center;
+}
+
+button {
+  border-radius: 10px;
+  border: none;
+  width: 10rem;
+  height: 2rem;
+  margin-top: 1rem;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+input {
+  border-radius: 10px;
+  height: 2rem;
+  width: 20rem;
+}
+
+.todo-container {
+  border: solid 1px black;
+  width: 25%;
+  padding: 1rem;
+  margin: 2rem;
+  border-radius: 10px;
+}
